@@ -14,6 +14,7 @@
 		68FA67AB1E4665EC00F83D1B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68FA67A91E4665EC00F83D1B /* LaunchScreen.storyboard */; };
 		68FA67B61E4665EC00F83D1B /* TurfWarsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68FA67B51E4665EC00F83D1B /* TurfWarsTests.swift */; };
 		68FA67C11E4665EC00F83D1B /* TurfWarsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68FA67C01E4665EC00F83D1B /* TurfWarsUITests.swift */; };
+		A1BB0E7F94D1A5583E20F4F8 /* libPods-TurfWars.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FCA2E3574B977B20131CD4D /* libPods-TurfWars.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0D1D8C1A3B91518FA7982D44 /* Pods-TurfWars.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TurfWars.release.xcconfig"; path = "Pods/Target Support Files/Pods-TurfWars/Pods-TurfWars.release.xcconfig"; sourceTree = "<group>"; };
 		68FA679D1E4665EC00F83D1B /* TurfWars.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TurfWars.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		68FA67A01E4665EC00F83D1B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		68FA67A21E4665EC00F83D1B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +49,8 @@
 		68FA67BC1E4665EC00F83D1B /* TurfWarsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TurfWarsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		68FA67C01E4665EC00F83D1B /* TurfWarsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TurfWarsUITests.swift; sourceTree = "<group>"; };
 		68FA67C21E4665EC00F83D1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6FCA2E3574B977B20131CD4D /* libPods-TurfWars.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TurfWars.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3D1A8ED5FDB2A2DE9D3C859 /* Pods-TurfWars.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TurfWars.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TurfWars/Pods-TurfWars.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1BB0E7F94D1A5583E20F4F8 /* libPods-TurfWars.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +79,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5FFA68B3389A7EEA18CE5508 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6FCA2E3574B977B20131CD4D /* libPods-TurfWars.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		68FA67941E4665EC00F83D1B = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +94,8 @@
 				68FA67B41E4665EC00F83D1B /* TurfWarsTests */,
 				68FA67BF1E4665EC00F83D1B /* TurfWarsUITests */,
 				68FA679E1E4665EC00F83D1B /* Products */,
+				FB5610212362F2F9E543316C /* Pods */,
+				5FFA68B3389A7EEA18CE5508 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +140,15 @@
 			path = TurfWarsUITests;
 			sourceTree = "<group>";
 		};
+		FB5610212362F2F9E543316C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F3D1A8ED5FDB2A2DE9D3C859 /* Pods-TurfWars.debug.xcconfig */,
+				0D1D8C1A3B91518FA7982D44 /* Pods-TurfWars.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +156,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 68FA67C51E4665EC00F83D1B /* Build configuration list for PBXNativeTarget "TurfWars" */;
 			buildPhases = (
+				D5512B84E75C6822356CBC5B /* [CP] Check Pods Manifest.lock */,
 				68FA67991E4665EC00F83D1B /* Sources */,
 				68FA679A1E4665EC00F83D1B /* Frameworks */,
 				68FA679B1E4665EC00F83D1B /* Resources */,
+				E875BF1A2586DE1AA63059B0 /* [CP] Embed Pods Frameworks */,
+				9C6ECE0F368A847DB08990E7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -256,6 +283,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9C6ECE0F368A847DB08990E7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TurfWars/Pods-TurfWars-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D5512B84E75C6822356CBC5B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E875BF1A2586DE1AA63059B0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TurfWars/Pods-TurfWars-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		68FA67991E4665EC00F83D1B /* Sources */ = {
@@ -411,6 +486,7 @@
 		};
 		68FA67C61E4665EC00F83D1B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F3D1A8ED5FDB2A2DE9D3C859 /* Pods-TurfWars.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 95948KX624;
@@ -424,6 +500,7 @@
 		};
 		68FA67C71E4665EC00F83D1B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0D1D8C1A3B91518FA7982D44 /* Pods-TurfWars.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 95948KX624;
